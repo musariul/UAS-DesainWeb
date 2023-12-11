@@ -27,6 +27,10 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    padding: 3rem 9%;
+}
+
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -64,7 +68,25 @@ header .navbar a:hover{
     display: none;
 }
 
+.home{ 
+    min-height:100vh ;
+    display: flex;
+    align-items: center;
+    background: url(/img/logo1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
+.home .content span{
+    font-size: 3rem;
+    color: var(--pink);
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color: var(--black);
+}
 
 
 
