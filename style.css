@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Open+Sans&display=swap');
 
 :root{
-    --pink:#EE0548;
-    --black:#130f40;
+    --pink:#906126;
+    --black:#F3CB51;
 }
 
 *{
@@ -105,7 +105,7 @@ header .navbar a:hover{
     min-height:100vh ;
     display: flex;
     align-items: center;
-    background: url(/img/bg.jpg) no-repeat;
+    background: url(/img/bg1.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
