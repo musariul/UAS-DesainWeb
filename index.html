@@ -297,11 +297,11 @@
       </script>
       <script>
           document.addEventListener('DOMContentLoaded', function () {
-            const classesToAnimate = ['.step-container', '.vendor', '.clients', '.team','.contact', '.blog', 'footer'];
+            const classesToAnimate = ['.step-container','.box' ,'.vendor', '.clients', '.team','.contact', '.blog', 'footer'];
 
             // Intersection Observer configuration
             const options = {
-              threshold: 0.1, // Trigger when 10% of the element is visible
+              threshold: 0.01, // Trigger when 10% of the element is visible
             };
 
             // Function to handle the intersection observer callback
