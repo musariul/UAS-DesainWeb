@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Wedding Organizer</title>
@@ -29,9 +30,9 @@
 
       <section class="home" id="home">
         <div class="content">
-          <span>wedding planner agency</span>
-          <h3>we make every moment special!</h3>
-          <a href="#" class="btn">learn more</a>
+          <span class="focus-in-expand-fwd">wedding planner agency</span>
+          <h3 class="focus-in-expand-fwd">we make every <br> moment special!</h3>
+          <a href="#" class="btn focus-in-expand-fwd">learn more</a>
           
         </div>
       </section>
@@ -187,7 +188,7 @@
 
           <div class="box">
             <img src="img/team-1.jpg" alt="">
-            <h3>john deo</h3>
+            <h3>Musariul Khoir</h3>
             <span>wedding planner</span>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores magni nulla error soluta porro reprehenderit, possimus temporibus incidunt fugiat accusamus! Non officiis facere enim corrupti, dolorum nesciunt maxime eligendi nemo?</p>
             <div class="share">
@@ -200,7 +201,7 @@
         
           <div class="box">
             <img src="img/team-2.jpg" alt="">
-            <h3>john deo</h3>
+            <h3>Arnella Hayya Amalia Ovin</h3>
             <span>wedding planner</span>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores magni nulla error soluta porro reprehenderit, possimus temporibus incidunt fugiat accusamus! Non officiis facere enim corrupti, dolorum nesciunt maxime eligendi nemo?</p>
             <div class="share">
@@ -294,5 +295,41 @@
           navbar.classList.remove('nav-toggle');
         }
       </script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const classesToAnimate = ['.step-container', '.vendor', '.clients', '.team','.contact', '.blog', 'footer'];
+
+            // Intersection Observer configuration
+            const options = {
+              threshold: 0.1, // Trigger when 10% of the element is visible
+            };
+
+            // Function to handle the intersection observer callback
+            function handleIntersection(entries, observer) {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('animate__animated', 'animate__slideInUp');
+                  observer.unobserve(entry.target);
+                } else {
+                  entry.target.classList.remove('animate__animated', 'animate__slideInUp');
+                }
+              });
+            }
+
+            // Create an Intersection Observer for each class
+            classesToAnimate.forEach((classSelector) => {
+              const elements = document.querySelectorAll(classSelector);
+
+              // Create an Intersection Observer for each class
+              const observer = new IntersectionObserver(handleIntersection, options);
+
+              // Start observing each element in the class
+              elements.forEach((element) => {
+                observer.observe(element);
+              });
+            });
+          });
+      </script>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
     </body>
 </html>
