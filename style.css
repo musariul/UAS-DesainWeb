@@ -75,9 +75,9 @@ header{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     background: transparent; /* Set background to transparent initially */
-     transition: background 0.3s ease; /* Add transition for smooth effect */
-     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1); /* Add shadow */
+     background: transparent; 
+     transition: background 0.3s ease; 
+     box-shadow: 0 0 0px rgba(0, 0, 0, 0.1); 
 }
 
 header.scrolled {
@@ -115,7 +115,7 @@ header .navbar a:hover{
     min-height:100vh ;
     display: flex;
     align-items: center;
-    background: url(/img/bg1.png) no-repeat;
+    background: url(/img/background.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -137,7 +137,6 @@ header .navbar a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 16rem;
 }
 
 .step-container .step{
@@ -197,6 +196,7 @@ header .navbar a:hover{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    filter: brightness(0.7);
 }
 
 .vendor .box-container .box .info{
@@ -533,8 +533,6 @@ footer span{
 
 
 .step {
-    /* Additional styling for each step */
-    /* Adjust styles as needed */
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #ccc;
