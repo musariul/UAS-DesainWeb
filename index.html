@@ -38,12 +38,12 @@
         </div>
       </section>
 
-      <div class="heading">
+      <div class="heading" id="2">
         <h1>Our Packages</h1>
         <img src="img/img.png" alt="">
       </div>
 
-      <section class="step-container" id="2">
+      <section class="step-container" >
 
         <div class="step">
           <h3>Wedding Planner</h3>
@@ -193,7 +193,7 @@
             </div>  
           </div>
 
-          <img src="img/divider.png" class="divider" alt="">
+          <img src="img/panjang.png" class="divider" alt="">
 
           <div class="box-container">
             <div class="box">
@@ -262,7 +262,7 @@
           <img src="img/img.png" alt="">
         </div>
 
-        <form action="">
+        <form action="#contact" id="myForm">
           <div class="inputBox">
             <input type="text" placeholder="Your Name">
             <input type="email" placeholder="Your Email">
@@ -272,9 +272,13 @@
             <input type="text" placeholder="Your Address">
           </div>
           <textarea placeholder="say something" name="" id="" cols="30" rows="10"></textarea>
-          <input type="text" value="Send Message" class="btn">
+          <input type="submit" value="Send Message" class="btn">
 
         </form>
+
+        <div id="notification">
+          <p>Pesan terkirim!</p>
+        </div>
 
       </section>
 
@@ -376,6 +380,23 @@
           header.classList.toggle("scrolled", window.scrollY > 0);
         });
       </script>
-      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+     
+      <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Menghentikan perilaku bawaan formulir
+
+            // Tampilkan notifikasi pop-up
+            document.getElementById('notification').style.display = 'block';
+
+            // Hapus semua teks yang telah diisi
+            document.getElementById('myForm').reset();
+
+            // Sembunyikan notifikasi setelah beberapa detik (contoh: 3 detik)
+            setTimeout(function() {
+                document.getElementById('notification').style.display = 'none';
+            }, 3000);
+        });
+      </script>
+
     </body>
 </html>

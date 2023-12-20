@@ -65,6 +65,11 @@ section{
     text-transform: uppercase;
 }
 
+/* .heading .img{
+    max-width: 100%;
+    height: auto;
+} */
+
 header{
     position: fixed;
     top: 0;
@@ -272,6 +277,10 @@ header .navbar a:hover{
     padding: 0 .5rem;
 }
 
+.clients .row img{
+    width: 20rem;
+}
+
 .team .box-container{
     display: flex;
     align-items: center;
@@ -429,7 +438,24 @@ footer span{
     color: var(--black);
 }
 
+#notification {
+    display: none;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
 
+#notification p {
+    margin: 0;
+    font-size: 2rem;
+}
 
 
 
