@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kalnia', serif;
+}
+
+body {
+    background-color: #f6f6f6; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-section {
+    background: linear-gradient(to bottom, #906126, #d4a35a); 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+.site-title {
+    font-size: 2rem; 
+    font-weight: 700;
+}
+
+.partner-section, .gallery-section {
+    padding: 30px 0; 
+}
+
+.section-title {
+    font-size: 1.8rem; 
+    margin-bottom: 25px; 
+    text-align: center;
+    color: #4a4a4a;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+}
+
+.partner-logos img {
+    width: 250px; 
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.partner-logos img:hover {
+    opacity: 5;
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+    gap: 30px;
+}
+
+.gallery-item {
+    width: 100%;
+    border-radius: 6px; 
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(0.7);
+}
+
+.gallery-item:hover {
+    transform: scale(1.13);
+}
+
+.footer-section {
+    background: linear-gradient(to bottom, #906126, #d4a35a);
+    color: #fff; 
+    padding: 15px 0; 
+    text-align: center;
+}

@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="vendor.css">
-    <title>Dress Vendor</title>
+    <title>Dress Collection</title>
 </head>
+
 <body>
 
+    <header class="header-section">
+        <div class="container">
+            <h1 class="site-title">Wedding Vendor Dress</h1>
+        </div>
+    </header>
+
+    <section class="partner-section">
+        <div class="container">
+            <h2 class="section-title">Our Partners</h2>
+            <div class="partner-logos">
+                <img src="img/vendor/logodress1.png" alt="Partner 1 Logo">
+                <img src="img/vendor/logodress2.png" alt="Partner 2 Logo">
+                <img src="img/vendor/logodress3.png" alt="Partner 3 Logo">
+            </div>
+        </div>
+    </section>
+
+    <main class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Dress Collection</h2>
+            <div class="product-gallery">
+                <img class="gallery-item" src="img/vendor/dress (1).png" alt="Dress 1">
+                <img class="gallery-item" src="img/vendor/dress (2).png" alt="Dress 2">
+                <img class="gallery-item" src="img/vendor/dress (3).png" alt="Dress 3">
+                <img class="gallery-item" src="img/vendor/dress (4).png" alt="Dress 4">
+                <img class="gallery-item" src="img/vendor/dress (5).png" alt="Dress 5">
+                <img class="gallery-item" src="img/vendor/dress (6).png" alt="Dress 6">
+                <img class="gallery-item" src="img/vendor/dress (7).png" alt="Dress 7">
+                <img class="gallery-item" src="img/vendor/dress (8).png" alt="Dress 8">
+                <img class="gallery-item" src="img/vendor/dress (9).png" alt="Dress 9">
+                <img class="gallery-item" src="img/vendor/dress (10).png" alt="Dress 10">
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2023 Dress Collection. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            galleryItems.forEach((item) => {
+                item.addEventListener('mouseover', function() {
+                    item.style.boxShadow = "0 4px 15px rgba(0, 0, 0, 0.1)";
+                });
+
+                item.addEventListener('mouseout', function() {
+                    item.style.boxShadow = "0 4px 10px rgba(0, 0, 0, 0.1)";
+                });
+            });
+        });
+    </script>
+
 </body>
+
 </html>
