@@ -197,6 +197,14 @@ header .navbar a:hover{
     cursor: pointer;
 }
 
+.vendor .heading p{
+    font-size: 2rem;
+    color: #906126;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
 .vendor .box-container .box img{
     height: 100%;
     width: 100%;
