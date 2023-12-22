@@ -554,7 +554,41 @@ footer span{
 
 @media(max-width:450px){
     html{
-        font-size: 55%;
+        font-size: 45%;
+    }
+
+    .header {
+        padding: 2rem 2%;
+    }
+
+    section {
+        padding: 3rem 2%;
+    }
+
+    header .logo {
+        font-size: 2rem;
+    }
+
+    header .navbar a {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        padding: .7rem 2rem;
+    }
+
+    .home .content span {
+        font-size: 1.8rem;
+    }
+
+    .home .content h3 {
+        font-size: 3rem;
+    }
+
+    .step-container .step {
+        flex: 1 1 100%;
     }
 }
 
