@@ -149,7 +149,7 @@ input[type="radio"]:checked {
 #s1:checked ~ #slide1,
 #s2:checked ~ #slide2,
 #s3:checked ~ #slide3,
-#s4:checked ~ #slide4,
+#s4:checked ~ #slide4, 
 #s5:checked ~ #slide5 {
     transform: translate3d(0%, 0, 0px);
     box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
@@ -181,7 +181,7 @@ input[type="radio"]:checked {
 #s3:checked ~ #slide5,
 #s4:checked ~ #slide1,
 #s5:checked ~ #slide2 {
-    transform: translate3d(-40%, 0, -250px);
+    transform: translate3d(40%, 0, -250px);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
