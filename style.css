@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Open+Sans&display=swap');
 
 :root{
-    --pink:#906126;
-    --black:#F3CB51;
+    --brown:#906126;
+    --yellow:#F3CB51;
 }
 
 *{
@@ -16,7 +16,7 @@
 }
 
 *::selection{
-    background: var(--pink);
+    background: var(--brown);
     color: #fff;
 }
 
@@ -28,7 +28,7 @@ html{
 }
 
 body{
-    background: var(--black);
+    background: var(--yellow);
 }
 
 section{
@@ -38,8 +38,8 @@ section{
 .btn{
     display: inline-block;
     margin-top: 1rem;
-    border: 3px solid var(--black);
-    color: var(--black);
+    border: 3px solid var(--yellow);
+    color: var(--yellow);
     font-size: 1.7rem;
     padding: .8rem 3rem;
     cursor: pointer;
@@ -47,8 +47,8 @@ section{
 }
 
 .btn:hover{
-    background: var(--pink);
-    border-color: var(--pink);
+    background: var(--brown);
+    border-color: var(--brown);
     color: #fff;
 }
 
@@ -86,7 +86,7 @@ header{
 }
 
 header.scrolled {
-    background: var(--pink);
+    background: var(--brown);
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
   }
 
@@ -103,7 +103,7 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    color: var(--black);
+    color: var(--yellow);
 }
 
 #menu-bar{
@@ -133,7 +133,7 @@ header .navbar a:hover{
 
 .home .content h3{
     font-size: 6rem;
-    color: var(--black);
+    color: var(--yellow);
     width: 60rem;
 }
 
@@ -156,13 +156,13 @@ header .navbar a:hover{
 
 .step-container .step span{
     font-size: 7rem;
-    color: var(--pink);
+    color: var(--brown);
     font-weight: bolder;
 }
 
 .step-container .step h3{
     font-size: 3rem;
-    color: var(--black);
+    color: var(--yellow);
     padding-bottom: 10px;
 }
 
@@ -238,7 +238,7 @@ header .navbar a:hover{
 
 .vendor .box-container .box .info h3{
     font-size: 3rem;
-    color:var(--black);
+    color:var(--yellow);
 }
 
 .vendor .box-container .box .info p{
@@ -282,7 +282,7 @@ header .navbar a:hover{
 }
 
 .clients .row .box-container .box .info i{
-    color: var(--pink);
+    color: var(--brown);
     padding: 0 .5rem;
 }
 
@@ -318,12 +318,12 @@ header .navbar a:hover{
 
 .team .box-container .box h3{
     font-size: 2rem;
-    color: var(--pink);
+    color: var(--brown);
 }
 
 .team .box-container .box span{
     font-size: 2rem;
-    color: var(--pink);
+    color: var(--brown);
 }
 
 .team .box-container .box p{
@@ -342,13 +342,13 @@ header .navbar a:hover{
     border-radius: 40px;
     line-height: 4rem;
     font-size: 2rem;
-    color: var(--black);
+    color: var(--yellow);
     background: #eee;
 }
 
 .team .box-container .box .share a:hover{
     color: #fff;
-    background: var(--pink);
+    background: var(--brown);
 }
 .contact form{
     padding: 2rem;
@@ -390,7 +390,7 @@ header .navbar a:hover{
 
 .contact form .inputBox input::focus,
 .contact form textarea::focus {
-    border-color: var(--pink);
+    border-color: var(--brown);
 }
 
 .blog .box-container{
@@ -420,12 +420,12 @@ header .navbar a:hover{
 }
 
 .blog .box-container .box .info h3{
-    color: var(--black);
+    color: var(--yellow);
     font-size: 2.5rem;
 }
 
 .blog .box-container .box .info h3 span{
-    color: var(--pink);
+    color: var(--brown);
     font-weight: bolder;
 }
 
@@ -438,13 +438,13 @@ header .navbar a:hover{
 footer {
     padding: 2.5rem 1.5rem;
     font-size: 1.5rem;
-    color: var(--black);
+    color: var(--yellow);
     background: #fff;
     text-align: center; 
 }
 
 footer span{
-    color: var(--black);
+    color: var(--yellow);
 }
 
 #notification {
@@ -497,7 +497,7 @@ footer span{
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: var(--black);
+        background: var(--yellow);
         padding: 1rem 0;
         clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
     }
@@ -510,7 +510,7 @@ footer span{
         display: block;
         background: #fff;
         border-radius: .5rem;
-        color: var(--black);
+        color: var(--yellow);
         margin: 1.5rem ;
         padding: 1rem 2rem;
         font-size: 2.5rem;
